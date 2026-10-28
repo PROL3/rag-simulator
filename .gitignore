@@ -6,3 +6,4 @@ dist/
 **/__pycache__/
 *.py[cod]
 backend/python_service/data/chroma/
+backend/python_service/data/pdfs
