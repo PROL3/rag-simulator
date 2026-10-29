@@ -637,7 +637,7 @@ a {
   min-width: 0;
 }
 .stage-card {
-  height: 170px;
+  min-height: 170px;
   background: #fff;
   border: 1px solid #e9eeec;
   border-radius: 8px;
@@ -698,40 +698,41 @@ a {
   letter-spacing: -0.3px;
   margin: 12px 0 3px;
   font-weight: 700;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 .stage-desc {
   font-size: 11px;
   color: #9ba5a2;
   margin: 0 0 12px;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
 }
 .stage-meta {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  min-width: 0;
 }
 .stage-live {
   font-size: 8px;
   color: #55635f;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
+  min-width: 0;
 }
 .stage-live i {
   width: 4px;
   height: 4px;
   box-shadow: none;
   flex: none;
+  margin-top: 2px;
 }
 .stage-params {
   font-family: "DM Mono", monospace;
   font-size: 7px;
   color: #a3ada9;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: anywhere;
 }
 .stage-menu {
   position: absolute;
@@ -1026,11 +1027,6 @@ a {
   border-color: #f2d6d2;
   color: #a54840;
   background: #fff6f4;
-}
-.stage-params {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .stage-count.muted {
   color: #a88356;
@@ -1475,7 +1471,7 @@ a {
     display: none;
   }
   .stage-card {
-    height: 150px;
+    min-height: 150px;
   }
   .stage-desc {
     margin-bottom: 9px;
@@ -1619,7 +1615,7 @@ a {
     gap: 10px;
   }
   .stage-card {
-    height: 153px;
+    min-height: 153px;
     padding: 12px 10px;
   }
   .stage-card h3 {
